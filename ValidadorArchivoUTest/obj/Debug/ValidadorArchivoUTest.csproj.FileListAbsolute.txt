@@ -1,0 +1,16 @@
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\ValidadorArchivoUTest.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\ValidadorArchivoUTest.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\ValidadorEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\ValidadorEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\obj\Debug\ValidadorArchivoUTest.csprojAssemblyReference.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\obj\Debug\ValidadorArchivoUTest.csproj.CoreCompileInputs.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\obj\Debug\ValidadorArchivoUTest.csproj.CopyComplete
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\obj\Debug\ValidadorArchivoUTest.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorArchivoUTest\obj\Debug\ValidadorArchivoUTest.pdb

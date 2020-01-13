@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ServicioEvento</RootNamespace>
     <AssemblyName>ServicioEvento</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,13 +42,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IServicioArchivo.cs" />
     <Compile Include="Interfaces\IServicioEvento.cs" />
+    <Compile Include="Interfaces\IServicioFecha.cs" />
+    <Compile Include="Interfaces\IServicioTipoFecha.cs" />
+    <Compile Include="Interfaces\IServicioVista.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicioArchivo.cs" />
+    <Compile Include="ServicioEvento.cs" />
+    <Compile Include="ServicioFecha.cs" />
+    <Compile Include="ServicioTipoFecha.cs" />
+    <Compile Include="ServicioVista.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\ConsoleApp1.csproj">
-      <Project>{c527f657-c661-4279-89ed-bb2c1101c8bb}</Project>
-      <Name>ConsoleApp1</Name>
+    <ProjectReference Include="..\RecuperadorEventos\RecuperadorEventos.csproj">
+      <Project>{2AC989EC-FF44-4E23-8EA0-EAC797F157A0}</Project>
+      <Name>RecuperadorEventos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositorioEventos\RepositorioEventos.csproj">
+      <Project>{76A92600-0EF1-4C9B-8715-C0D6F3D211BA}</Project>
+      <Name>RepositorioEventos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidadorEventos\ValidadorEventos.csproj">
+      <Project>{812D8078-5A7B-4F53-B582-8F9C7E03F330}</Project>
+      <Name>ValidadorEventos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

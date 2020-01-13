@@ -1,0 +1,9 @@
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\bin\Debug\ValidadorEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\bin\Debug\ValidadorEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\bin\Debug\RepositorioEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\bin\Debug\RepositorioEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\obj\Debug\ValidadorEventos.csprojAssemblyReference.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\obj\Debug\ValidadorEventos.csproj.CoreCompileInputs.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\obj\Debug\ValidadorEventos.csproj.CopyComplete
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\obj\Debug\ValidadorEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\ValidadorEventos\obj\Debug\ValidadorEventos.pdb

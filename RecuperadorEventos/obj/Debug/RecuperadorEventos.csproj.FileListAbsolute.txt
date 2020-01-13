@@ -1,0 +1,9 @@
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\obj\Debug\RecuperadorEventos.csprojAssemblyReference.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\obj\Debug\RecuperadorEventos.csproj.CoreCompileInputs.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\bin\Debug\RecuperadorEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\bin\Debug\RecuperadorEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\bin\Debug\RepositorioEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\bin\Debug\RepositorioEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\obj\Debug\RecuperadorEventos.csproj.CopyComplete
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\obj\Debug\RecuperadorEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RecuperadorEventos\obj\Debug\RecuperadorEventos.pdb

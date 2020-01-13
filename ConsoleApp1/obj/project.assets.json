@@ -207,6 +207,53 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "RecuperadorEventos/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RepositorioEventos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RecuperadorEventos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RecuperadorEventos.dll": {}
+        }
+      },
+      "RepositorioEventos/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RepositorioEventos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositorioEventos.dll": {}
+        }
+      },
+      "ServicioEvento/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RecuperadorEventos": "1.0.0",
+          "RepositorioEventos": "1.0.0",
+          "ValidadorEventos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServicioEvento.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServicioEvento.dll": {}
+        }
+      },
+      "ValidadorEventos/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "RepositorioEventos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ValidadorEventos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ValidadorEventos.dll": {}
+        }
       }
     }
   },
@@ -680,27 +727,52 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "RecuperadorEventos/1.0.0": {
+      "type": "project",
+      "path": "../RecuperadorEventos/RecuperadorEventos.csproj",
+      "msbuildProject": "../RecuperadorEventos/RecuperadorEventos.csproj"
+    },
+    "RepositorioEventos/1.0.0": {
+      "type": "project",
+      "path": "../RepositorioEventos/RepositorioEventos.csproj",
+      "msbuildProject": "../RepositorioEventos/RepositorioEventos.csproj"
+    },
+    "ServicioEvento/1.0.0": {
+      "type": "project",
+      "path": "../ServicioEvento/ServicioEvento.csproj",
+      "msbuildProject": "../ServicioEvento/ServicioEvento.csproj"
+    },
+    "ValidadorEventos/1.0.0": {
+      "type": "project",
+      "path": "../ValidadorEventos/ValidadorEventos.csproj",
+      "msbuildProject": "../ValidadorEventos/ValidadorEventos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "ServicioEvento >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IGNITER\\.nuget\\packages\\": {}
+    "C:\\Users\\Raul.tuyin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IGNITER\\Source\\Repos\\Eventos\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\Raul.tuyin\\Documents\\GitHub\\Eventos\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\IGNITER\\Source\\Repos\\Eventos\\ConsoleApp1\\ConsoleApp1.csproj",
-      "packagesPath": "C:\\Users\\IGNITER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IGNITER\\Source\\Repos\\Eventos\\ConsoleApp1\\obj\\",
+      "projectPath": "C:\\Users\\Raul.tuyin\\Documents\\GitHub\\Eventos\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\Raul.tuyin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Raul.tuyin\\Documents\\GitHub\\Eventos\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\IGNITER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Raul.tuyin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -708,11 +780,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://bot-apps-dev01/Nugets/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Raul.tuyin\\Documents\\GitHub\\Eventos\\ServicioEvento\\ServicioEvento.csproj": {
+              "projectPath": "C:\\Users\\Raul.tuyin\\Documents\\GitHub\\Eventos\\ServicioEvento\\ServicioEvento.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -725,23 +802,16 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

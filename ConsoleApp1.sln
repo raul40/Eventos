@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{C527F657-C661-4279-89ED-BB2C1101C8BB}"
 EndProject
@@ -14,6 +14,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositorioEventos", "RepositorioEventos\RepositorioEventos.csproj", "{76A92600-0EF1-4C9B-8715-C0D6F3D211BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServicioEvento", "ServicioEvento\ServicioEvento.csproj", "{91247ED5-B307-48A4-8E8B-1959003C82B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidadorArchivoUTest", "ValidadorArchivoUTest\ValidadorArchivoUTest.csproj", "{BEF821C9-C4D6-4382-BE7A-A7D630C5C57F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecuperadorArchivoUTest", "RecuperadorArchivoUTest\RecuperadorArchivoUTest.csproj", "{88387D66-B651-49C2-98DE-20F424DB838D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecuperadorFechaEventoUTest", "RecuperadorFechaEventoUTest\RecuperadorFechaEventoUTest.csproj", "{045D9994-817B-4B1B-86BB-1B3602F121EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecuperadorTipoFechaUTest", "RecuperadorTipoFechaUTest\RecuperadorTipoFechaUTest.csproj", "{0F14A7EE-E03A-47C2-A2B3-F090C5D39EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecuperadorEventoUTest", "RecuperadorEventoUTest\RecuperadorEventoUTest.csproj", "{9EE45733-3D5B-404E-B8B9-BCEF10BB17B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,11 +51,32 @@ Global
 		{91247ED5-B307-48A4-8E8B-1959003C82B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91247ED5-B307-48A4-8E8B-1959003C82B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91247ED5-B307-48A4-8E8B-1959003C82B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF821C9-C4D6-4382-BE7A-A7D630C5C57F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF821C9-C4D6-4382-BE7A-A7D630C5C57F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF821C9-C4D6-4382-BE7A-A7D630C5C57F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF821C9-C4D6-4382-BE7A-A7D630C5C57F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88387D66-B651-49C2-98DE-20F424DB838D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88387D66-B651-49C2-98DE-20F424DB838D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88387D66-B651-49C2-98DE-20F424DB838D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88387D66-B651-49C2-98DE-20F424DB838D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045D9994-817B-4B1B-86BB-1B3602F121EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045D9994-817B-4B1B-86BB-1B3602F121EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045D9994-817B-4B1B-86BB-1B3602F121EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045D9994-817B-4B1B-86BB-1B3602F121EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F14A7EE-E03A-47C2-A2B3-F090C5D39EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F14A7EE-E03A-47C2-A2B3-F090C5D39EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F14A7EE-E03A-47C2-A2B3-F090C5D39EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F14A7EE-E03A-47C2-A2B3-F090C5D39EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE45733-3D5B-404E-B8B9-BCEF10BB17B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE45733-3D5B-404E-B8B9-BCEF10BB17B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE45733-3D5B-404E-B8B9-BCEF10BB17B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE45733-3D5B-404E-B8B9-BCEF10BB17B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{C527F657-C661-4279-89ED-BB2C1101C8BB} = {BF46A829-143C-4CFF-9937-37F086F5E6B2}
 		{2AC989EC-FF44-4E23-8EA0-EAC797F157A0} = {BF46A829-143C-4CFF-9937-37F086F5E6B2}
 		{812D8078-5A7B-4F53-B582-8F9C7E03F330} = {BF46A829-143C-4CFF-9937-37F086F5E6B2}
 		{76A92600-0EF1-4C9B-8715-C0D6F3D211BA} = {BF46A829-143C-4CFF-9937-37F086F5E6B2}

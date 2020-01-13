@@ -1,0 +1,6 @@
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\bin\Debug\RepositorioEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\bin\Debug\RepositorioEventos.pdb
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\obj\Debug\RepositorioEventos.csprojAssemblyReference.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\obj\Debug\RepositorioEventos.csproj.CoreCompileInputs.cache
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\obj\Debug\RepositorioEventos.dll
+C:\Users\Raul.tuyin\Documents\GitHub\Eventos\RepositorioEventos\obj\Debug\RepositorioEventos.pdb

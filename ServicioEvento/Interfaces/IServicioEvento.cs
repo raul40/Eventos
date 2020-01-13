@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RepositorioEventos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,6 @@ namespace ServicioEvento.Interfaces
 {
     public interface IServicioEvento
     {
-
-        string ObtenerEvento();
-
-
+        List<Archivo> ObtenerEventos(List<Archivo> _lstArchivo);
     }
 }

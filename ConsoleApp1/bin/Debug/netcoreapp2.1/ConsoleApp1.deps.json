@@ -7,14 +7,68 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "ServicioEvento": "1.0.0"
+        },
         "runtime": {
           "ConsoleApp1.dll": {}
+        }
+      },
+      "RecuperadorEventos/1.0.0": {
+        "dependencies": {
+          "RepositorioEventos": "1.0.0"
+        },
+        "runtime": {
+          "RecuperadorEventos.dll": {}
+        }
+      },
+      "RepositorioEventos/1.0.0": {
+        "runtime": {
+          "RepositorioEventos.dll": {}
+        }
+      },
+      "ServicioEvento/1.0.0": {
+        "dependencies": {
+          "RecuperadorEventos": "1.0.0",
+          "RepositorioEventos": "1.0.0",
+          "ValidadorEventos": "1.0.0"
+        },
+        "runtime": {
+          "ServicioEvento.dll": {}
+        }
+      },
+      "ValidadorEventos/1.0.0": {
+        "dependencies": {
+          "RepositorioEventos": "1.0.0"
+        },
+        "runtime": {
+          "ValidadorEventos.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RecuperadorEventos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RepositorioEventos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ServicioEvento/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ValidadorEventos/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

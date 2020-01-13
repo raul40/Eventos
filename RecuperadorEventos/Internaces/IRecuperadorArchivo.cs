@@ -9,8 +9,7 @@ namespace RecuperadorEventos.Internaces
 {
     public interface IRecuperadorArchivo
     {
-        List<IArchivo> ObtenerContenidoArchivo(string _cRuta);
+        List<Archivo> ObtenerContenidoArchivo(string _cRuta);
 
-        List<IArchivo> ConvertirDatosArchivo(Array _arrDatos);
     }
 }

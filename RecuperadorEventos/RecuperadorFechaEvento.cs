@@ -1,4 +1,5 @@
 ﻿using RecuperadorEventos.Internaces;
+using RepositorioEventos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,85 +10,48 @@ namespace RecuperadorEventos
 {
     public class RecuperadorFechaEvento : IRecuperadorFechaEvento
     {
-        private readonly string cMensajeFechaFutura = "ocurrirá dentro de";
-        private readonly string cMensajeFechaPasada = "ocurrió hace";
-        public string ObtenerMensajeFecha(DateTime _dtFechaEvento, DateTime _dtFechaEvaluada)
+        public List<Archivo> ObtenerValorDiferenciaFecha(List<Archivo> _lstArchivo)
         {
-            string cMensajeFecha = string.Empty;
-            TimeSpan tsDiferencia;
-            string cTexto = string.Empty;
-            string cTextoTiempo = string.Empty;
-            string cTextoFechaEvento = string.Empty;
-
-            if (_dtFechaEvaluada >= _dtFechaEvento)
+            foreach (var item in _lstArchivo)
             {
-                tsDiferencia = _dtFechaEvaluada - _dtFechaEvento;
-                cTexto = cMensajeFechaPasada;
-            }
-            else
-            {
-                tsDiferencia = _dtFechaEvento - _dtFechaEvaluada;
-                cTexto = cMensajeFechaFutura;
+                switch (item.cTipoFecha)
+                {
+                    case "MES":
+                        item.iValorDiferencia = item.tsDiferencia.Days / 31;
+                        break;
+                    case "DIA":
+                        item.iValorDiferencia = item.tsDiferencia.Days;
+                        break;
+                    case "HORA":
+                        item.iValorDiferencia = item.tsDiferencia.Hours;
+                        break;
+                    case "MINUTO":
+                        item.iValorDiferencia = item.tsDiferencia.Minutes;
+                        break;
+                    default:
+                        throw new Exception("El tipo de Fecha no existe");
+                }
             }
 
-            ObtenerValorDiferenciaFecha(tsDiferencia);
-
-            return cMensajeFecha;
+            return _lstArchivo;
         }
 
-        public int ObtenerValorDiferenciaFecha(TimeSpan _tsDiferencia)
+        public List<Archivo> ObtenerDiferenciaFechas(List<Archivo> _lstArchivos)
         {
-            int iValorDiferenciaFecha = 0;
-            string cTiempo = string.Empty;
-            string ctipoValorDiferencia = string.Empty;
-            int iDiferencia = 0;
-
-            if (_tsDiferencia.Days > 31)
+            foreach (var item in _lstArchivos)
             {
-                iDiferencia = _tsDiferencia.Days / 31;
-                ctipoValorDiferencia = "MES";
-            }
-            else if (_tsDiferencia.Days > 0)
-            {
-                iDiferencia = _tsDiferencia.Days;
-                ctipoValorDiferencia = "DIA";
-            }
-            else if (_tsDiferencia.Hours > 0)
-            {
-                iDiferencia = _tsDiferencia.Hours;
-                ctipoValorDiferencia = "HORAS";
-            }
-            else if (_tsDiferencia.Minutes >= 0)
-            {
-                iDiferencia = _tsDiferencia.Minutes;
-                ctipoValorDiferencia = iDiferencia > 1 ? "Minutos" : "Minuto";
+                //if (item.dtFechaComparar > item.dtFechaEvento)
+                //{
+                //    item.tsDiferencia = item.dtFechaComparar - item.dtFechaEvento;
+                //}
+                //else
+                //{
+                //    item.tsDiferencia = item.dtFechaEvento - item.dtFechaComparar;
+                //}
+                item.tsDiferencia = item.dtFechaComparar - item.dtFechaEvento;
             }
 
-            return iValorDiferenciaFecha;
-        }
-
-        public string cTipoValorDiferenciaFecha(string _cTipoValorDiferencia, int _iDiferencia)
-        {
-            string cTextoTipoDiferencia = string.Empty;
-            switch (_cTipoValorDiferencia)
-            {
-                case "MES":
-                    cTextoTipoDiferencia = _iDiferencia > 1 ? "Meses" : "Mes";
-                    break;
-                case "DIA":
-                    cTextoTipoDiferencia = _iDiferencia > 1 ? "Dias" : "Dia";
-                    break;
-                case "HORAS":
-                    cTextoTipoDiferencia = _iDiferencia > 1 ? "Horas" : "Hora";
-                    break;
-                case "MINUTO":
-                    cTextoTipoDiferencia = _iDiferencia > 1 ? "Minutos" : "Minuto";
-                    break;
-                default:
-                    break;
-            }
-
-            return cTextoTipoDiferencia;
+            return _lstArchivos;
         }
     }
 }
